@@ -22,7 +22,7 @@ def check_price():
 
     converted_price = Decimal(sub(r'[^\d.]', '', price))
 
-    if(converted_price > 80000):
+    if(converted_price < 80000):
         send_mail()
     print(converted_price)
     print(title.strip())
